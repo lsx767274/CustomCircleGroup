@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/framLayout">
+        <ImageButton
+            android:id="@+id/open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pl_center_open_bg"
+            android:src="@drawable/pl_center_open"
+            android:layout_gravity="center_horizontal|center_vertical"/>
+        <ImageView
+            android:id="@+id/circle_center_big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:src="@drawable/pl_open_big" />
+
+        <com.example.lisx.myapplication.CircleView
+            android:id="@+id/id_menulayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical" />
+
+        <ImageButton
+            android:id="@+id/circle_center_samll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:background="@drawable/pl_check_exit" />
+    </FrameLayout>
+</RelativeLayout>
